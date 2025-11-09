@@ -8,7 +8,7 @@ const FeaturedCollections = () => {
         <div className="grid md:grid-cols-2 gap-8">
           {/* Men's Collection */}
           <a
-            href="#men"
+            href="/shop/men"
             className="group relative overflow-hidden rounded-lg shadow-lg hover-scale cursor-pointer h-[500px]"
           >
             <div
@@ -27,7 +27,7 @@ const FeaturedCollections = () => {
 
           {/* Women's Collection */}
           <a
-            href="#women"
+            href="/shop/women"
             className="group relative overflow-hidden rounded-lg shadow-lg hover-scale cursor-pointer h-[500px]"
           >
             <div

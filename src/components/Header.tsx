@@ -1,6 +1,7 @@
 import { useState } from "react";
-import { ShoppingCart, Search, Heart, Menu, X } from "lucide-react";
+import { Search, Heart, Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { CartDrawer } from "@/components/CartDrawer";
 import velaLogo from "@/assets/vela-logo.png";
 
 const Header = () => {
@@ -24,19 +25,19 @@ const Header = () => {
 
             {/* Desktop Navigation */}
             <nav className="hidden md:flex items-center space-x-8">
-              <a href="#men" className="text-foreground hover:text-primary font-medium transition-colors">
+              <a href="/shop/men" className="text-foreground hover:text-primary font-medium transition-colors">
                 Men
               </a>
-              <a href="#women" className="text-foreground hover:text-primary font-medium transition-colors">
+              <a href="/shop/women" className="text-foreground hover:text-primary font-medium transition-colors">
                 Women
               </a>
-              <a href="#story" className="text-foreground hover:text-primary font-medium transition-colors">
+              <a href="/about" className="text-foreground hover:text-primary font-medium transition-colors">
                 About
               </a>
-              <a href="#blog" className="text-foreground hover:text-primary font-medium transition-colors">
+              <a href="/blog" className="text-foreground hover:text-primary font-medium transition-colors">
                 Blog
               </a>
-              <a href="#contact" className="text-foreground hover:text-primary font-medium transition-colors">
+              <a href="/contact" className="text-foreground hover:text-primary font-medium transition-colors">
                 Contact
               </a>
             </nav>
@@ -49,12 +50,7 @@ const Header = () => {
               <button className="text-foreground hover:text-primary transition-colors" aria-label="Wishlist">
                 <Heart className="h-5 w-5" />
               </button>
-              <button className="text-foreground hover:text-primary transition-colors relative" aria-label="Cart">
-                <ShoppingCart className="h-5 w-5" />
-                <span className="absolute -top-2 -right-2 bg-primary text-primary-foreground text-xs rounded-full h-5 w-5 flex items-center justify-center">
-                  0
-                </span>
-              </button>
+              <CartDrawer />
 
               {/* Mobile Menu Toggle */}
               <button
@@ -71,19 +67,19 @@ const Header = () => {
           {mobileMenuOpen && (
             <nav className="md:hidden py-4 border-t border-border">
               <div className="flex flex-col space-y-4">
-                <a href="#men" className="text-foreground hover:text-primary font-medium transition-colors">
+                <a href="/shop/men" className="text-foreground hover:text-primary font-medium transition-colors">
                   Men
                 </a>
-                <a href="#women" className="text-foreground hover:text-primary font-medium transition-colors">
+                <a href="/shop/women" className="text-foreground hover:text-primary font-medium transition-colors">
                   Women
                 </a>
-                <a href="#story" className="text-foreground hover:text-primary font-medium transition-colors">
+                <a href="/about" className="text-foreground hover:text-primary font-medium transition-colors">
                   About
                 </a>
-                <a href="#blog" className="text-foreground hover:text-primary font-medium transition-colors">
+                <a href="/blog" className="text-foreground hover:text-primary font-medium transition-colors">
                   Blog
                 </a>
-                <a href="#contact" className="text-foreground hover:text-primary font-medium transition-colors">
+                <a href="/contact" className="text-foreground hover:text-primary font-medium transition-colors">
                   Contact
                 </a>
               </div>

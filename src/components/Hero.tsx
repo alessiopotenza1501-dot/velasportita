@@ -22,12 +22,16 @@ const Hero = () => {
             Designed for Speed. Crafted for Comfort.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
-            <Button variant="hero" size="lg">
-              Shop Men
-            </Button>
-            <Button variant="hero-outline" size="lg">
-              Shop Women
-            </Button>
+            <a href="/shop/men">
+              <Button variant="hero" size="lg">
+                Shop Men
+              </Button>
+            </a>
+            <a href="/shop/women">
+              <Button variant="hero-outline" size="lg">
+                Shop Women
+              </Button>
+            </a>
           </div>
         </div>
       </div>
