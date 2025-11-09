@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="grid md:grid-cols-4 gap-8 mb-12">
           {/* Brand */}
           <div>
-            <img src={velaLogo} alt="Vela Sport Italia" className="h-12 w-auto mb-4" />
+            <img src={velaLogo} alt="Vela Sport Italia" className="h-12 w-auto mb-4 brightness-0 invert" />
             <p className="text-sm opacity-80">
               Italian performance footwear designed for speed and crafted for comfort.
             </p>
