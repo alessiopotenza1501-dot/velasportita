@@ -1,10 +1,8 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import craftsmanshipImage from "@/assets/craftsmanship-formal.jpg";
-
 const About = () => {
-  return (
-    <div className="min-h-screen">
+  return <div className="min-h-screen">
       <Header />
       <main>
         {/* Hero Section */}
@@ -26,26 +24,14 @@ const About = () => {
           <div className="container mx-auto px-4">
             <div className="grid md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
               <div>
-                <h2 className="text-4xl font-heading font-bold mb-6">
-                  Made in Italy, Refined for Today
-                </h2>
-                <p className="text-lg text-muted-foreground mb-4">
-                  Vela Sport Italia represents the finest tradition of Italian shoemaking, creating classic leather footwear that embodies timeless elegance and sophisticated style. Every shoe is crafted to meet the exacting standards of the modern professional.
-                </p>
-                <p className="text-lg text-muted-foreground mb-4">
-                  Using premium Italian leather and time-honored techniques, we ensure each pair delivers exceptional quality, comfort, and durability. From elegant Oxfords to refined Chelsea boots, our commitment to excellence never wavers.
-                </p>
-                <p className="text-lg text-muted-foreground">
-                  We believe that true style is timeless. That's why every Vela shoe is designed to complement your wardrobe today and for years to come—sophisticated, reliable, and unmistakably Italian.
-                </p>
+                <h2 className="text-4xl font-heading font-bold mb-6">Made in Italy, eleganza senza tempo</h2>
+                <p className="text-lg text-muted-foreground mb-4">Vela Sport Italia rappresenta la migliore tradizione calzaturiera italiana, creando calzature classiche in pelle che incarnano un'eleganza senza tempo e uno stile sofisticato. Ogni scarpa è realizzata per soddisfare i rigorosi standard del moderno professionista.</p>
+                <p className="text-lg text-muted-foreground mb-4">Utilizzando pellami italiani di prima qualità e tecniche consolidate, garantiamo che ogni paio offra qualità, comfort e durata eccezionali. Dalle eleganti Oxford ai raffinati stivaletti Chelsea, il nostro impegno per l'eccellenza non vacilla mai.</p>
+                <p className="text-lg text-muted-foreground">Crediamo che il vero stile sia senza tempo. Ecco perché ogni scarpa Vela è progettata per completare il tuo guardaroba oggi e negli anni a venire: sofisticata, affidabile e inconfondibilmente italiana.</p>
               </div>
               
               <div>
-                <img
-                  src={craftsmanshipImage}
-                  alt="Italian craftsmanship"
-                  className="w-full rounded-lg shadow-xl"
-                />
+                <img src={craftsmanshipImage} alt="Italian craftsmanship" className="w-full rounded-lg shadow-xl" />
               </div>
             </div>
           </div>
@@ -95,8 +81,6 @@ const About = () => {
         </section>
       </main>
       <Footer />
-    </div>
-  );
+    </div>;
 };
-
 export default About;
