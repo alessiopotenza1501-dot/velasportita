@@ -14,7 +14,7 @@ const ShopMen = () => {
                 Men's Collection
               </h1>
               <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-                Performance footwear designed for the modern athlete
+                Classic Italian leather shoes for the modern gentleman
               </p>
             </div>
             

@@ -6,10 +6,10 @@ const ProductHighlights = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-4xl md:text-5xl font-heading font-bold mb-4 text-foreground">
-            Featured Products
+            Featured Collections
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Discover premium Italian footwear for men and women
+            Classic Italian leather shoes for every occasion
           </p>
         </div>
 

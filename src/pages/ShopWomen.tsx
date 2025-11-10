@@ -14,7 +14,7 @@ const ShopWomen = () => {
                 Women's Collection
               </h1>
               <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-                Style meets performance in every step
+                Elegant Italian leather footwear with timeless sophistication
               </p>
             </div>
             

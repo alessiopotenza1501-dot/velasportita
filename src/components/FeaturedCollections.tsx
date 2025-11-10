@@ -1,5 +1,5 @@
-import productMen from "@/assets/product-men-1.jpg";
-import productWomen from "@/assets/product-women-1.jpg";
+import productMen from "@/assets/product-men-oxford-black.jpg";
+import productWomen from "@/assets/product-women-ankle-boots.jpg";
 
 const FeaturedCollections = () => {
   return (
@@ -17,8 +17,8 @@ const FeaturedCollections = () => {
             />
             <div className="absolute inset-0 bg-gradient-to-t from-accent/90 via-accent/50 to-transparent" />
             <div className="absolute bottom-0 left-0 right-0 p-8 text-accent-foreground">
-              <h2 className="text-4xl font-heading font-bold mb-3">Men's Shoes</h2>
-              <p className="text-lg mb-4">Engineered for performance</p>
+              <h2 className="text-4xl font-heading font-bold mb-3">Men's Collection</h2>
+              <p className="text-lg mb-4">Classic elegance refined</p>
               <span className="inline-block text-primary-foreground bg-primary px-6 py-3 rounded-md font-semibold group-hover:bg-primary-hover transition-colors">
                 Shop Now →
               </span>
@@ -36,8 +36,8 @@ const FeaturedCollections = () => {
             />
             <div className="absolute inset-0 bg-gradient-to-t from-accent/90 via-accent/50 to-transparent" />
             <div className="absolute bottom-0 left-0 right-0 p-8 text-accent-foreground">
-              <h2 className="text-4xl font-heading font-bold mb-3">Women's Shoes</h2>
-              <p className="text-lg mb-4">Style meets function</p>
+              <h2 className="text-4xl font-heading font-bold mb-3">Women's Collection</h2>
+              <p className="text-lg mb-4">Timeless sophistication</p>
               <span className="inline-block text-primary-foreground bg-primary px-6 py-3 rounded-md font-semibold group-hover:bg-primary-hover transition-colors">
                 Shop Now →
               </span>

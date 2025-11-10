@@ -5,21 +5,21 @@ const testimonials = [
     id: 1,
     name: "Marco Rossi",
     location: "Milan, Italy",
-    text: "The best running shoes I've ever owned. The comfort and support are unmatched!",
+    text: "Exceptional quality and timeless style. These shoes are perfect for the boardroom and beyond.",
     rating: 5,
   },
   {
     id: 2,
     name: "Sofia Bianchi",
     location: "Rome, Italy",
-    text: "Perfect blend of style and performance. I wear them for workouts and casual outings.",
+    text: "Elegant, comfortable, and beautifully crafted. Vela has become my go-to for every occasion.",
     rating: 5,
   },
   {
     id: 3,
     name: "Luca Ferrari",
     location: "Turin, Italy",
-    text: "True Italian quality. These shoes are worth every euro. Highly recommend!",
+    text: "True Italian quality with refined design. These classic shoes are worth every euro.",
     rating: 5,
   },
 ];
@@ -33,7 +33,7 @@ const Testimonials = () => {
             What Our Customers Say
           </h2>
           <p className="text-lg text-muted-foreground">
-            Join thousands of satisfied athletes worldwide
+            Trusted by discerning professionals worldwide
           </p>
         </div>
 

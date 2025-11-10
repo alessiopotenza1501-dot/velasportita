@@ -1,4 +1,4 @@
-import craftsmanshipImage from "@/assets/craftsmanship.jpg";
+import craftsmanshipImage from "@/assets/craftsmanship-formal.jpg";
 import { Button } from "@/components/ui/button";
 
 const BrandStory = () => {
@@ -9,13 +9,13 @@ const BrandStory = () => {
           {/* Text Content */}
           <div className="order-2 md:order-1 animate-fade-in">
             <h2 className="text-4xl md:text-5xl font-heading font-bold mb-6 text-foreground">
-              Italian Craftsmanship Meets Modern Performance
+              Refined Italian Craftsmanship
             </h2>
             <p className="text-lg text-muted-foreground mb-6">
-              Born in the heart of Italy, Vela Sport Italia combines centuries of artisan tradition with cutting-edge athletic technology. Each pair is meticulously crafted to deliver unparalleled comfort and performance.
+              Born in Italy's finest workshops, Vela Sport Italia creates classic leather footwear that embodies timeless elegance. Each pair combines traditional Italian craftsmanship with contemporary design, perfect for the modern professional.
             </p>
             <p className="text-lg text-muted-foreground mb-8">
-              Our master craftsmen use only premium materials, ensuring every shoe meets the highest standards of quality and durability. From the first stitch to the final inspection, excellence is our promise.
+              Using only premium Italian leather and time-honored techniques, we ensure every shoe meets exacting standards. From elegant dress shoes to sophisticated boots, Vela represents accessible luxury and enduring style.
             </p>
             <Button variant="default" size="lg">
               Discover Our Story

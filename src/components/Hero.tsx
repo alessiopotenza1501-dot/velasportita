@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import heroImage from "@/assets/hero-shoes.jpg";
+import heroImage from "@/assets/hero-formal-shoes.jpg";
 
 const Hero = () => {
   return (
@@ -16,10 +16,10 @@ const Hero = () => {
       <div className="relative container mx-auto px-4 h-full flex items-center">
         <div className="max-w-2xl text-accent-foreground animate-fade-in">
           <h1 className="text-5xl md:text-7xl font-heading font-bold mb-6 leading-tight">
-            Step into Italian Performance
+            Timeless Italian Elegance
           </h1>
           <p className="text-xl md:text-2xl mb-8 font-body">
-            Designed for Speed. Crafted for Comfort.
+            Classic Leather. Refined Style. Made in Italy.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <a href="/shop/men">
