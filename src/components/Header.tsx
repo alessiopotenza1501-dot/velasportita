@@ -1,10 +1,14 @@
 import { useState } from "react";
-import { Search, Heart, Menu, X } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import { CartDrawer } from "@/components/CartDrawer";
-import velaLogo from "@/assets/vela-logo.png";
+import { useTranslation } from "react-i18next";
+import { NavLink } from "./NavLink";
+import { Menu, X, Search, Heart } from "lucide-react";
+import { Button } from "./ui/button";
+import { CartDrawer } from "./CartDrawer";
+import LanguageSwitcher from "./LanguageSwitcher";
+import logo from "@/assets/vela-logo.png";
 
 const Header = () => {
+  const { t } = useTranslation();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
@@ -15,76 +19,96 @@ const Header = () => {
       </div>
 
       {/* Main Header */}
-      <header className="sticky top-0 z-50 bg-background border-b border-border shadow-sm">
+      <header className="sticky top-0 z-50 bg-background border-b">
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between h-20">
             {/* Logo */}
-            <a href="/" className="flex items-center">
-              <img src={velaLogo} alt="Vela Sport Italia" className="h-12 w-auto" />
-            </a>
+            <NavLink to="/" className="flex items-center">
+              <img src={logo} alt="Vela Sport Italia" className="h-12 w-auto" />
+            </NavLink>
 
-            {/* Desktop Navigation */}
-            <nav className="hidden md:flex items-center space-x-8">
-              <a href="/shop/men" className="text-foreground hover:text-primary font-medium transition-colors">
-                Men
-              </a>
-              <a href="/shop/women" className="text-foreground hover:text-primary font-medium transition-colors">
-                Women
-              </a>
-              <a href="/about" className="text-foreground hover:text-primary font-medium transition-colors">
-                About
-              </a>
-              <a href="/blog" className="text-foreground hover:text-primary font-medium transition-colors">
-                Blog
-              </a>
-              <a href="/contact" className="text-foreground hover:text-primary font-medium transition-colors">
-                Contact
-              </a>
-            </nav>
+          {/* Desktop Navigation */}
+          <nav className="hidden md:flex items-center space-x-8">
+            <NavLink to="/shop/men" className="text-sm font-medium hover:text-primary transition-colors">
+              {t('nav.men')}
+            </NavLink>
+            <NavLink to="/shop/women" className="text-sm font-medium hover:text-primary transition-colors">
+              {t('nav.women')}
+            </NavLink>
+            <NavLink to="/about" className="text-sm font-medium hover:text-primary transition-colors">
+              {t('nav.about')}
+            </NavLink>
+            <NavLink to="/blog" className="text-sm font-medium hover:text-primary transition-colors">
+              {t('nav.blog')}
+            </NavLink>
+            <NavLink to="/contact" className="text-sm font-medium hover:text-primary transition-colors">
+              {t('nav.contact')}
+            </NavLink>
+          </nav>
 
-            {/* Right Icons */}
-            <div className="flex items-center space-x-4">
-              <button className="text-foreground hover:text-primary transition-colors" aria-label="Search">
-                <Search className="h-5 w-5" />
-              </button>
-              <button className="text-foreground hover:text-primary transition-colors" aria-label="Wishlist">
-                <Heart className="h-5 w-5" />
-              </button>
-              <CartDrawer />
-
-              {/* Mobile Menu Toggle */}
-              <button
-                className="md:hidden text-foreground"
-                onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-                aria-label="Menu"
-              >
-                {mobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
-              </button>
-            </div>
+          {/* Icons */}
+          <div className="flex items-center space-x-2">
+            <LanguageSwitcher />
+            <Button variant="ghost" size="icon">
+              <Search className="h-5 w-5" />
+            </Button>
+            <Button variant="ghost" size="icon">
+              <Heart className="h-5 w-5" />
+            </Button>
+            <CartDrawer />
           </div>
 
-          {/* Mobile Navigation */}
-          {mobileMenuOpen && (
-            <nav className="md:hidden py-4 border-t border-border">
-              <div className="flex flex-col space-y-4">
-                <a href="/shop/men" className="text-foreground hover:text-primary font-medium transition-colors">
-                  Men
-                </a>
-                <a href="/shop/women" className="text-foreground hover:text-primary font-medium transition-colors">
-                  Women
-                </a>
-                <a href="/about" className="text-foreground hover:text-primary font-medium transition-colors">
-                  About
-                </a>
-                <a href="/blog" className="text-foreground hover:text-primary font-medium transition-colors">
-                  Blog
-                </a>
-                <a href="/contact" className="text-foreground hover:text-primary font-medium transition-colors">
-                  Contact
-                </a>
-              </div>
-            </nav>
-          )}
+          {/* Mobile menu button */}
+          <Button
+            variant="ghost"
+            size="icon"
+            className="md:hidden"
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+          >
+            {mobileMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+          </Button>
+        </div>
+
+        {/* Mobile Navigation */}
+        {mobileMenuOpen && (
+          <nav className="flex flex-col space-y-4 p-4">
+            <NavLink 
+              to="/shop/men" 
+              className="text-lg font-medium hover:text-primary transition-colors"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              {t('nav.men')}
+            </NavLink>
+            <NavLink 
+              to="/shop/women" 
+              className="text-lg font-medium hover:text-primary transition-colors"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              {t('nav.women')}
+            </NavLink>
+            <NavLink 
+              to="/about" 
+              className="text-lg font-medium hover:text-primary transition-colors"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              {t('nav.about')}
+            </NavLink>
+            <NavLink 
+              to="/blog" 
+              className="text-lg font-medium hover:text-primary transition-colors"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              {t('nav.blog')}
+            </NavLink>
+            <NavLink 
+              to="/contact" 
+              className="text-lg font-medium hover:text-primary transition-colors"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              {t('nav.contact')}
+            </NavLink>
+          </nav>
+        )}
         </div>
       </header>
     </>

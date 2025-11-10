@@ -1,0 +1,125 @@
+{
+  "nav": {
+    "men": "Uomo",
+    "women": "Donna",
+    "about": "Chi Siamo",
+    "blog": "Blog",
+    "contact": "Contatti"
+  },
+  "hero": {
+    "title": "Eleganza Italiana Senza Tempo",
+    "subtitle": "Pelle Classica. Stile Raffinato. Made in Italy.",
+    "cta_men": "Scopri Collezione Uomo",
+    "cta_women": "Scopri Collezione Donna"
+  },
+  "featured": {
+    "title": "Collezioni in Evidenza",
+    "subtitle": "Scarpe classiche italiane in pelle per ogni occasione",
+    "men_title": "Collezione Uomo",
+    "men_desc": "Calzature eleganti e formali per il gentleman moderno",
+    "women_title": "Collezione Donna",
+    "women_desc": "Stile sofisticato e comfort per la donna contemporanea",
+    "explore": "Esplora"
+  },
+  "story": {
+    "subtitle": "Il Nostro Impegno",
+    "title": "Artigianato Italiano, Eleganza Senza Tempo",
+    "description": "Da generazioni creiamo calzature che uniscono la tradizione italiana con il design contemporaneo. Ogni paio di scarpe è realizzato con pelle pregiata e attenzione ai dettagli, incarnando l'essenza dello stile italiano.",
+    "quality_title": "Qualità Premium",
+    "quality_desc": "Solo le migliori pelli italiane selezionate",
+    "craftsmanship_title": "Maestria Artigianale",
+    "craftsmanship_desc": "Tecniche tradizionali tramandate nel tempo",
+    "design_title": "Design Elegante",
+    "design_desc": "Classico con un tocco di modernità"
+  },
+  "testimonials": {
+    "title": "Cosa Dicono i Nostri Clienti",
+    "subtitle": "Migliaia di professionisti si affidano a Vela Sport Italia",
+    "testimonial1": "Qualità eccezionale e comfort straordinario. Le mie scarpe preferite per l'ufficio e le occasioni formali.",
+    "testimonial2": "Eleganza senza tempo. Ricevo sempre complimenti quando indosso le mie Vela Sport.",
+    "testimonial3": "La qualità della pelle è superiore. Vale ogni centesimo dell'investimento.",
+    "client1": "Marco R., Milano",
+    "client2": "Sofia B., Roma",
+    "client3": "Alessandro T., Firenze"
+  },
+  "newsletter": {
+    "title": "Rimani Aggiornato",
+    "subtitle": "Iscriviti per ricevere offerte esclusive e nuovi arrivi",
+    "email_placeholder": "La tua email",
+    "subscribe": "Iscriviti"
+  },
+  "footer": {
+    "tagline": "Eleganza italiana senza tempo",
+    "shop": "Acquista",
+    "men": "Uomo",
+    "women": "Donna",
+    "help": "Assistenza",
+    "shipping": "Spedizioni",
+    "returns": "Resi",
+    "faq": "FAQ",
+    "about_section": "Chi Siamo",
+    "our_story": "La Nostra Storia",
+    "contact": "Contatti",
+    "privacy": "Privacy Policy",
+    "terms": "Termini di Servizio",
+    "rights": "Tutti i diritti riservati"
+  },
+  "shop": {
+    "men_title": "Collezione Uomo",
+    "men_subtitle": "Calzature classiche italiane per ogni occasione formale",
+    "women_title": "Collezione Donna",
+    "women_subtitle": "Eleganza raffinata e comfort superiore",
+    "loading": "Caricamento prodotti...",
+    "no_products": "Nessun prodotto disponibile",
+    "add_to_cart": "Aggiungi al Carrello"
+  },
+  "cart": {
+    "title": "Il Tuo Carrello",
+    "empty": "Il tuo carrello è vuoto",
+    "continue": "Continua lo Shopping",
+    "subtotal": "Subtotale",
+    "checkout": "Procedi al Checkout",
+    "remove": "Rimuovi"
+  },
+  "about": {
+    "title": "La Nostra Storia",
+    "subtitle": "Tradizione calzaturiera italiana dal cuore della Campania",
+    "intro": "Vela Sport Italia nasce dalla passione per l'eleganza classica e la qualità artigianale italiana. Situati nel cuore della Campania, portiamo avanti una tradizione di eccellenza nella produzione di calzature che unisce maestria artigianale e design raffinato.",
+    "values_title": "I Nostri Valori",
+    "quality_title": "Qualità Senza Compromessi",
+    "quality_desc": "Utilizziamo solo le migliori pelli italiane e materiali premium per garantire longevità e comfort superiore.",
+    "style_title": "Stile Senza Tempo",
+    "style_desc": "I nostri design classici trascendono le mode passeggere, offrendo eleganza che dura nel tempo.",
+    "craftsmanship_title": "Maestria Italiana",
+    "craftsmanship_desc": "Ogni paio è realizzato seguendo tecniche tradizionali che rispettano l'eredità calzaturiera italiana.",
+    "visit_title": "Vieni a Trovarci",
+    "visit_desc": "Ti invitiamo a visitare il nostro showroom per scoprire da vicino la qualità e l'attenzione ai dettagli che caratterizzano ogni nostro prodotto."
+  },
+  "contact": {
+    "title": "Contattaci",
+    "subtitle": "Hai domande? Siamo qui per aiutarti.",
+    "form_title": "Inviaci un Messaggio",
+    "info_title": "Informazioni di Contatto",
+    "name": "Nome",
+    "email": "Email",
+    "subject": "Oggetto",
+    "message": "Messaggio",
+    "send": "Invia Messaggio",
+    "address_title": "Indirizzo",
+    "address": "Strada Consortile, ASI – Polo UNICA – Lotto B16 Bis\n81032 Carinaro (CE) – Italia",
+    "phone_title": "Telefono",
+    "phone": "Tel: (+39) 081 502 14 47",
+    "fax": "Fax: (+39) 081 502 34 21",
+    "email_title": "Email",
+    "hours_title": "Orari di Apertura",
+    "hours_weekday": "Lunedì - Venerdì: 9:00 - 18:00",
+    "hours_saturday": "Sabato: 10:00 - 16:00",
+    "hours_sunday": "Domenica: Chiuso"
+  },
+  "blog": {
+    "title": "Il Nostro Blog",
+    "subtitle": "Storie, tendenze e consigli dal mondo delle calzature italiane",
+    "coming_soon": "Prossimamente",
+    "coming_soon_desc": "Stiamo preparando contenuti interessanti su stile, cura delle calzature e tradizione italiana. Torna presto!"
+  }
+}

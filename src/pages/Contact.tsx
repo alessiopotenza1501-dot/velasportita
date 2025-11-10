@@ -1,11 +1,35 @@
+import { useState } from "react";
+import { useTranslation } from "react-i18next";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Mail, MapPin, Phone } from "lucide-react";
+import { toast } from "sonner";
 
 const Contact = () => {
+  const { t } = useTranslation();
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    subject: '',
+    message: ''
+  });
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    
+    const mailtoLink = `mailto:info@velasportitalia.it?subject=${encodeURIComponent(formData.subject)}&body=${encodeURIComponent(
+      `Nome: ${formData.name}\nEmail: ${formData.email}\n\nMessaggio:\n${formData.message}`
+    )}`;
+    
+    window.location.href = mailtoLink;
+    toast.success(t('contact.title'), {
+      description: "Il tuo client email si aprirà a breve."
+    });
+  };
+
   return (
     <div className="min-h-screen">
       <Header />
@@ -14,43 +38,62 @@ const Contact = () => {
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center mb-12">
               <h1 className="text-5xl md:text-6xl font-heading font-bold mb-6">
-                Get in Touch
+                {t('contact.title')}
               </h1>
               <p className="text-xl text-muted-foreground">
-                Have questions? We're here to help.
+                {t('contact.subtitle')}
               </p>
             </div>
 
             <div className="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto">
               {/* Contact Form */}
               <div className="bg-card p-8 rounded-lg shadow-md">
-                <h2 className="text-2xl font-heading font-bold mb-6">Send us a message</h2>
-                <form className="space-y-6">
+                <h2 className="text-2xl font-heading font-bold mb-6">{t('contact.form_title')}</h2>
+                <form className="space-y-6" onSubmit={handleSubmit}>
                   <div>
-                    <label className="block text-sm font-medium mb-2">Name</label>
-                    <Input placeholder="Your name" />
+                    <label className="block text-sm font-medium mb-2">{t('contact.name')}</label>
+                    <Input 
+                      placeholder={t('contact.name')}
+                      value={formData.name}
+                      onChange={(e) => setFormData({...formData, name: e.target.value})}
+                      required
+                    />
                   </div>
                   
                   <div>
-                    <label className="block text-sm font-medium mb-2">Email</label>
-                    <Input type="email" placeholder="your@email.com" />
+                    <label className="block text-sm font-medium mb-2">{t('contact.email')}</label>
+                    <Input 
+                      type="email" 
+                      placeholder="your@email.com"
+                      value={formData.email}
+                      onChange={(e) => setFormData({...formData, email: e.target.value})}
+                      required
+                    />
                   </div>
                   
                   <div>
-                    <label className="block text-sm font-medium mb-2">Subject</label>
-                    <Input placeholder="How can we help?" />
+                    <label className="block text-sm font-medium mb-2">{t('contact.subject')}</label>
+                    <Input 
+                      placeholder={t('contact.subject')}
+                      value={formData.subject}
+                      onChange={(e) => setFormData({...formData, subject: e.target.value})}
+                      required
+                    />
                   </div>
                   
                   <div>
-                    <label className="block text-sm font-medium mb-2">Message</label>
+                    <label className="block text-sm font-medium mb-2">{t('contact.message')}</label>
                     <Textarea 
-                      placeholder="Tell us more..." 
+                      placeholder={t('contact.message')}
                       className="min-h-[150px]"
+                      value={formData.message}
+                      onChange={(e) => setFormData({...formData, message: e.target.value})}
+                      required
                     />
                   </div>
                   
                   <Button type="submit" className="w-full" size="lg">
-                    Send Message
+                    {t('contact.send')}
                   </Button>
                 </form>
               </div>
@@ -58,15 +101,17 @@ const Contact = () => {
               {/* Contact Info */}
               <div className="space-y-8">
                 <div>
-                  <h2 className="text-2xl font-heading font-bold mb-6">Contact Information</h2>
+                  <h2 className="text-2xl font-heading font-bold mb-6">{t('contact.info_title')}</h2>
                   <div className="space-y-6">
                     <div className="flex items-start gap-4">
                       <div className="bg-primary text-primary-foreground p-3 rounded-lg">
-                        <Mail className="h-5 w-5" />
+                        <MapPin className="h-5 w-5" />
                       </div>
                       <div>
-                        <h3 className="font-semibold mb-1">Email</h3>
-                        <p className="text-muted-foreground">info@velasport.it</p>
+                        <h3 className="font-semibold mb-1">{t('contact.address_title')}</h3>
+                        <p className="text-muted-foreground whitespace-pre-line">
+                          {t('contact.address')}
+                        </p>
                       </div>
                     </div>
                     
@@ -75,32 +120,42 @@ const Contact = () => {
                         <Phone className="h-5 w-5" />
                       </div>
                       <div>
-                        <h3 className="font-semibold mb-1">Phone</h3>
-                        <p className="text-muted-foreground">+39 02 1234 5678</p>
+                        <h3 className="font-semibold mb-1">{t('contact.phone_title')}</h3>
+                        <a 
+                          href="tel:+390815021447" 
+                          className="text-muted-foreground hover:text-primary transition-colors block"
+                        >
+                          {t('contact.phone')}
+                        </a>
+                        <p className="text-muted-foreground text-sm mt-1">
+                          {t('contact.fax')}
+                        </p>
                       </div>
                     </div>
                     
                     <div className="flex items-start gap-4">
                       <div className="bg-primary text-primary-foreground p-3 rounded-lg">
-                        <MapPin className="h-5 w-5" />
+                        <Mail className="h-5 w-5" />
                       </div>
                       <div>
-                        <h3 className="font-semibold mb-1">Address</h3>
-                        <p className="text-muted-foreground">
-                          Via della Moda 123<br />
-                          20121 Milano, Italy
-                        </p>
+                        <h3 className="font-semibold mb-1">{t('contact.email_title')}</h3>
+                        <a 
+                          href="mailto:info@velasportitalia.it" 
+                          className="text-muted-foreground hover:text-primary transition-colors"
+                        >
+                          info@velasportitalia.it
+                        </a>
                       </div>
                     </div>
                   </div>
                 </div>
 
                 <div className="bg-secondary p-6 rounded-lg">
-                  <h3 className="font-heading font-bold text-xl mb-3">Business Hours</h3>
+                  <h3 className="font-heading font-bold text-xl mb-3">{t('contact.hours_title')}</h3>
                   <div className="space-y-2 text-muted-foreground">
-                    <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
-                    <p>Saturday: 10:00 AM - 4:00 PM</p>
-                    <p>Sunday: Closed</p>
+                    <p>{t('contact.hours_weekday')}</p>
+                    <p>{t('contact.hours_saturday')}</p>
+                    <p>{t('contact.hours_sunday')}</p>
                   </div>
                 </div>
               </div>

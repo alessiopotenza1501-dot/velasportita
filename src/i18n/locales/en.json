@@ -1,0 +1,125 @@
+{
+  "nav": {
+    "men": "Men",
+    "women": "Women",
+    "about": "About",
+    "blog": "Blog",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Timeless Italian Elegance",
+    "subtitle": "Classic Leather. Refined Style. Made in Italy.",
+    "cta_men": "Shop Men's Collection",
+    "cta_women": "Shop Women's Collection"
+  },
+  "featured": {
+    "title": "Featured Collections",
+    "subtitle": "Classic Italian leather shoes for every occasion",
+    "men_title": "Men's Collection",
+    "men_desc": "Elegant formal footwear for the modern gentleman",
+    "women_title": "Women's Collection",
+    "women_desc": "Sophisticated style and comfort for the contemporary woman",
+    "explore": "Explore"
+  },
+  "story": {
+    "subtitle": "Our Commitment",
+    "title": "Italian Craftsmanship, Timeless Elegance",
+    "description": "For generations, we've been creating footwear that combines Italian tradition with contemporary design. Each pair of shoes is crafted with premium leather and attention to detail, embodying the essence of Italian style.",
+    "quality_title": "Premium Quality",
+    "quality_desc": "Only the finest Italian leathers selected",
+    "craftsmanship_title": "Expert Craftsmanship",
+    "craftsmanship_desc": "Traditional techniques passed down through time",
+    "design_title": "Elegant Design",
+    "design_desc": "Classic with a touch of modernity"
+  },
+  "testimonials": {
+    "title": "What Our Clients Say",
+    "subtitle": "Thousands of professionals trust Vela Sport Italia",
+    "testimonial1": "Exceptional quality and extraordinary comfort. My favorite shoes for the office and formal occasions.",
+    "testimonial2": "Timeless elegance. I always receive compliments when wearing my Vela Sport shoes.",
+    "testimonial3": "The leather quality is superior. Worth every cent of the investment.",
+    "client1": "Marco R., Milan",
+    "client2": "Sofia B., Rome",
+    "client3": "Alessandro T., Florence"
+  },
+  "newsletter": {
+    "title": "Stay Updated",
+    "subtitle": "Subscribe to receive exclusive offers and new arrivals",
+    "email_placeholder": "Your email",
+    "subscribe": "Subscribe"
+  },
+  "footer": {
+    "tagline": "Timeless Italian elegance",
+    "shop": "Shop",
+    "men": "Men",
+    "women": "Women",
+    "help": "Help",
+    "shipping": "Shipping",
+    "returns": "Returns",
+    "faq": "FAQ",
+    "about_section": "About",
+    "our_story": "Our Story",
+    "contact": "Contact",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "rights": "All rights reserved"
+  },
+  "shop": {
+    "men_title": "Men's Collection",
+    "men_subtitle": "Classic Italian footwear for every formal occasion",
+    "women_title": "Women's Collection",
+    "women_subtitle": "Refined elegance and superior comfort",
+    "loading": "Loading products...",
+    "no_products": "No products available",
+    "add_to_cart": "Add to Cart"
+  },
+  "cart": {
+    "title": "Your Cart",
+    "empty": "Your cart is empty",
+    "continue": "Continue Shopping",
+    "subtotal": "Subtotal",
+    "checkout": "Proceed to Checkout",
+    "remove": "Remove"
+  },
+  "about": {
+    "title": "Our Story",
+    "subtitle": "Italian shoemaking tradition from the heart of Campania",
+    "intro": "Vela Sport Italia was born from a passion for classic elegance and Italian artisan quality. Located in the heart of Campania, we carry forward a tradition of excellence in footwear production that combines artisan mastery and refined design.",
+    "values_title": "Our Values",
+    "quality_title": "Uncompromising Quality",
+    "quality_desc": "We use only the finest Italian leathers and premium materials to ensure longevity and superior comfort.",
+    "style_title": "Timeless Style",
+    "style_desc": "Our classic designs transcend passing trends, offering elegance that lasts over time.",
+    "craftsmanship_title": "Italian Mastery",
+    "craftsmanship_desc": "Each pair is crafted following traditional techniques that respect Italian shoemaking heritage.",
+    "visit_title": "Visit Us",
+    "visit_desc": "We invite you to visit our showroom to discover up close the quality and attention to detail that characterize each of our products."
+  },
+  "contact": {
+    "title": "Get in Touch",
+    "subtitle": "Have questions? We're here to help.",
+    "form_title": "Send us a Message",
+    "info_title": "Contact Information",
+    "name": "Name",
+    "email": "Email",
+    "subject": "Subject",
+    "message": "Message",
+    "send": "Send Message",
+    "address_title": "Address",
+    "address": "Strada Consortile, ASI – Polo UNICA – Lotto B16 Bis\n81032 Carinaro (CE) – Italy",
+    "phone_title": "Phone",
+    "phone": "Tel: (+39) 081 502 14 47",
+    "fax": "Fax: (+39) 081 502 34 21",
+    "email_title": "Email",
+    "hours_title": "Business Hours",
+    "hours_weekday": "Monday - Friday: 9:00 AM - 6:00 PM",
+    "hours_saturday": "Saturday: 10:00 AM - 4:00 PM",
+    "hours_sunday": "Sunday: Closed"
+  },
+  "blog": {
+    "title": "Our Blog",
+    "subtitle": "Stories, trends and tips from the world of Italian footwear",
+    "coming_soon": "Coming Soon",
+    "coming_soon_desc": "We're preparing interesting content about style, shoe care and Italian tradition. Come back soon!"
+  }
+}
