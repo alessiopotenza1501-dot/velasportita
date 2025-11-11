@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
 import { ProductCard } from "./ProductCard";
 import { fetchProducts, ShopifyProduct } from "@/lib/shopify";
 import { Loader2 } from "lucide-react";
@@ -9,6 +10,7 @@ interface ProductGridProps {
 }
 
 export const ProductGrid = ({ query, limit = 20 }: ProductGridProps) => {
+  const { t } = useTranslation();
   const [products, setProducts] = useState<ShopifyProduct[]>([]);
   const [loading, setLoading] = useState(true);
 
@@ -34,10 +36,7 @@ export const ProductGrid = ({ query, limit = 20 }: ProductGridProps) => {
   if (products.length === 0) {
     return (
       <div className="text-center py-20">
-        <h3 className="text-2xl font-heading font-bold mb-4">No products found</h3>
-        <p className="text-muted-foreground mb-6">
-          We don't have any products yet. Check back soon!
-        </p>
+        <h3 className="text-2xl font-heading font-bold mb-4">{t('shop.no_products')}</h3>
       </div>
     );
   }

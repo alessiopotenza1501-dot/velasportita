@@ -121,5 +121,11 @@
     "subtitle": "Storie, tendenze e consigli dal mondo delle calzature italiane",
     "coming_soon": "Prossimamente",
     "coming_soon_desc": "Stiamo preparando contenuti interessanti su stile, cura delle calzature e tradizione italiana. Torna presto!"
+  },
+  "brand_story": {
+    "heading": "Made in Italy raffinato",
+    "intro": "Nate nei migliori laboratori italiani, Vela Sport Italia crea calzature classiche in pelle che incarnano un'eleganza senza tempo. Ogni paio coniuga la tradizionale artigianalità italiana con un design contemporaneo, perfetto per il professionista moderno.",
+    "description": "Utilizzando solo pelle italiana premium e tecniche tramandate nel tempo, assicuriamo che ogni scarpa rispetti standard rigorosi. Dalle eleganti scarpe formali agli stivali sofisticati, Vela rappresenta lusso accessibile e stile duraturo.",
+    "cta": "Scopri la Nostra Storia"
   }
 }

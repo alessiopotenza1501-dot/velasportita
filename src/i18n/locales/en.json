@@ -121,5 +121,11 @@
     "subtitle": "Stories, trends and tips from the world of Italian footwear",
     "coming_soon": "Coming Soon",
     "coming_soon_desc": "We're preparing interesting content about style, shoe care and Italian tradition. Come back soon!"
+  },
+  "brand_story": {
+    "heading": "Refined Made in Italy",
+    "intro": "Born in the finest Italian workshops, Vela Sport Italia creates classic leather footwear that embodies timeless elegance. Each pair combines traditional Italian craftsmanship with contemporary design, perfect for the modern professional.",
+    "description": "Using only premium Italian leather and time-honored techniques, we ensure every shoe meets exacting standards. From elegant dress shoes to sophisticated boots, Vela represents accessible luxury and enduring style.",
+    "cta": "Discover Our Story"
   }
 }

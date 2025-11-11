@@ -1,7 +1,10 @@
+import { useTranslation } from "react-i18next";
 import { Facebook, Instagram } from "lucide-react";
 import velaLogo from "@/assets/vela-logo.png";
 
 const Footer = () => {
+  const { t } = useTranslation();
+  
   return (
     <footer className="bg-accent text-accent-foreground pt-16 pb-8">
       <div className="container mx-auto px-4">
@@ -10,32 +13,22 @@ const Footer = () => {
           <div>
             <img src={velaLogo} alt="Vela Sport Italia" className="h-12 w-auto mb-4 brightness-0 invert" />
             <p className="text-sm opacity-80">
-              Italian performance footwear designed for speed and crafted for comfort.
+              {t('footer.tagline')}
             </p>
           </div>
 
           {/* Shop */}
           <div>
-            <h3 className="font-heading font-bold text-lg mb-4">Shop</h3>
+            <h3 className="font-heading font-bold text-lg mb-4">{t('footer.shop')}</h3>
             <ul className="space-y-2 text-sm">
               <li>
-                <a href="#men" className="opacity-80 hover:opacity-100 hover:text-primary transition-colors">
-                  Men's Shoes
+                <a href="/shop/men" className="opacity-80 hover:opacity-100 hover:text-primary transition-colors">
+                  {t('footer.men')}
                 </a>
               </li>
               <li>
-                <a href="#women" className="opacity-80 hover:opacity-100 hover:text-primary transition-colors">
-                  Women's Shoes
-                </a>
-              </li>
-              <li>
-                <a href="#new" className="opacity-80 hover:opacity-100 hover:text-primary transition-colors">
-                  New Arrivals
-                </a>
-              </li>
-              <li>
-                <a href="#sale" className="opacity-80 hover:opacity-100 hover:text-primary transition-colors">
-                  Sale
+                <a href="/shop/women" className="opacity-80 hover:opacity-100 hover:text-primary transition-colors">
+                  {t('footer.women')}
                 </a>
               </li>
             </ul>
@@ -43,26 +36,26 @@ const Footer = () => {
 
           {/* Help */}
           <div>
-            <h3 className="font-heading font-bold text-lg mb-4">Help</h3>
+            <h3 className="font-heading font-bold text-lg mb-4">{t('footer.help')}</h3>
             <ul className="space-y-2 text-sm">
               <li>
                 <a href="#shipping" className="opacity-80 hover:opacity-100 hover:text-primary transition-colors">
-                  Shipping Info
+                  {t('footer.shipping')}
                 </a>
               </li>
               <li>
                 <a href="#returns" className="opacity-80 hover:opacity-100 hover:text-primary transition-colors">
-                  Returns
+                  {t('footer.returns')}
                 </a>
               </li>
               <li>
-                <a href="#sizing" className="opacity-80 hover:opacity-100 hover:text-primary transition-colors">
-                  Size Guide
+                <a href="#faq" className="opacity-80 hover:opacity-100 hover:text-primary transition-colors">
+                  {t('footer.faq')}
                 </a>
               </li>
               <li>
-                <a href="#contact" className="opacity-80 hover:opacity-100 hover:text-primary transition-colors">
-                  Contact Us
+                <a href="/contact" className="opacity-80 hover:opacity-100 hover:text-primary transition-colors">
+                  {t('footer.contact')}
                 </a>
               </li>
             </ul>
@@ -70,26 +63,21 @@ const Footer = () => {
 
           {/* About */}
           <div>
-            <h3 className="font-heading font-bold text-lg mb-4">About</h3>
+            <h3 className="font-heading font-bold text-lg mb-4">{t('footer.about_section')}</h3>
             <ul className="space-y-2 text-sm">
               <li>
-                <a href="#story" className="opacity-80 hover:opacity-100 hover:text-primary transition-colors">
-                  Our Story
+                <a href="/about" className="opacity-80 hover:opacity-100 hover:text-primary transition-colors">
+                  {t('footer.our_story')}
                 </a>
               </li>
               <li>
-                <a href="#sustainability" className="opacity-80 hover:opacity-100 hover:text-primary transition-colors">
-                  Sustainability
-                </a>
-              </li>
-              <li>
-                <a href="#blog" className="opacity-80 hover:opacity-100 hover:text-primary transition-colors">
+                <a href="/blog" className="opacity-80 hover:opacity-100 hover:text-primary transition-colors">
                   Blog
                 </a>
               </li>
               <li>
-                <a href="#careers" className="opacity-80 hover:opacity-100 hover:text-primary transition-colors">
-                  Careers
+                <a href="/contact" className="opacity-80 hover:opacity-100 hover:text-primary transition-colors">
+                  {t('footer.contact')}
                 </a>
               </li>
             </ul>
@@ -117,15 +105,15 @@ const Footer = () => {
             </div>
 
             <p className="text-sm opacity-60">
-              © 2024 Vela Sport Italia. All rights reserved.
+              © 2024 Vela Sport Italia. {t('footer.rights')}
             </p>
 
             <div className="flex gap-6 text-sm">
               <a href="#privacy" className="opacity-60 hover:opacity-100 transition-opacity">
-                Privacy Policy
+                {t('footer.privacy')}
               </a>
               <a href="#terms" className="opacity-60 hover:opacity-100 transition-opacity">
-                Terms of Service
+                {t('footer.terms')}
               </a>
             </div>
           </div>

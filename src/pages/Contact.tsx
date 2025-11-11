@@ -1,10 +1,12 @@
-import { useState } from "react";
 import { useTranslation } from "react-i18next";
+import { useState } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
+import { SEO } from "@/components/SEO";
+import { getBreadcrumbSchema } from "@/utils/structuredData";
 import { Mail, MapPin, Phone } from "lucide-react";
 import { toast } from "sonner";
 
@@ -16,6 +18,11 @@ const Contact = () => {
     subject: '',
     message: ''
   });
+
+  const breadcrumbData = getBreadcrumbSchema([
+    { name: "Home", url: "https://velasportitalia.lovable.app" },
+    { name: t('contact.title'), url: "https://velasportitalia.lovable.app/contact" }
+  ]);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -32,6 +39,13 @@ const Contact = () => {
 
   return (
     <div className="min-h-screen">
+      <SEO 
+        title={`${t('contact.title')} - Vela Sport Italia`}
+        description={t('contact.subtitle')}
+        keywords="contatti vela sport, scarpe italiane contatti, carinaro campania"
+        url="https://velasportitalia.lovable.app/contact"
+        structuredData={breadcrumbData}
+      />
       <Header />
       <main>
         <section className="py-20 bg-background">
