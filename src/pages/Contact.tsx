@@ -20,8 +20,8 @@ const Contact = () => {
   });
 
   const breadcrumbData = getBreadcrumbSchema([
-    { name: "Home", url: "https://velasportitalia.lovable.app" },
-    { name: t('contact.title'), url: "https://velasportitalia.lovable.app/contact" }
+    { name: "Home", url: "https://velasportita.lovable.app" },
+    { name: t('contact.title'), url: "https://velasportita.lovable.app/contact" }
   ]);
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -43,7 +43,7 @@ const Contact = () => {
         title={`${t('contact.title')} - Vela Sport Italia`}
         description={t('contact.subtitle')}
         keywords="contatti vela sport, scarpe italiane contatti, carinaro campania"
-        url="https://velasportitalia.lovable.app/contact"
+        url="https://velasportita.lovable.app/contact"
         structuredData={breadcrumbData}
       />
       <Header />

@@ -15,7 +15,7 @@ export const SEO = ({
   description = "Eleganza italiana senza tempo. Scarpe classiche in pelle per uomo e donna. Scopri calzature italiane premium - scarpe eleganti, stivali, mocassini. Made in Italy.",
   keywords = "scarpe italiane, calzature classiche, scarpe pelle uomo, scarpe pelle donna, scarpe eleganti, stivali italiani, mocassini, made in italy, scarpe formali, calzature artigianali",
   image = "https://storage.googleapis.com/gpt-engineer-file-uploads/QxExOJ4yh3e1JRofxzSZAhvHLGr2/uploads/1762775987723-logovela_upscayl_4x_upscayl_4x.jpg",
-  url = "https://velasportitalia.lovable.app",
+  url = "https://velasportita.lovable.app",
   type = "website",
   structuredData,
 }: SEOProps) => {

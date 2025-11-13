@@ -9,8 +9,8 @@ const About = () => {
   const { t } = useTranslation();
   
   const breadcrumbData = getBreadcrumbSchema([
-    { name: "Home", url: "https://velasportitalia.lovable.app" },
-    { name: t('about.title'), url: "https://velasportitalia.lovable.app/about" }
+    { name: "Home", url: "https://velasportita.lovable.app" },
+    { name: t('about.title'), url: "https://velasportita.lovable.app/about" }
   ]);
 
   return (
@@ -19,7 +19,7 @@ const About = () => {
         title={`${t('about.title')} - Tradizione Calzaturiera Italiana`}
         description={t('about.intro')}
         keywords="artigianato italiano, calzature italiane, made in italy, tradizione calzaturiera, campania"
-        url="https://velasportitalia.lovable.app/about"
+        url="https://velasportita.lovable.app/about"
         structuredData={breadcrumbData}
       />
       <Header />

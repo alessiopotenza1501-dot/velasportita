@@ -9,8 +9,8 @@ const ShopWomen = () => {
   const { t } = useTranslation();
   
   const breadcrumbData = getBreadcrumbSchema([
-    { name: "Home", url: "https://velasportitalia.lovable.app" },
-    { name: t('shop.women_title'), url: "https://velasportitalia.lovable.app/shop/women" }
+    { name: "Home", url: "https://velasportita.lovable.app" },
+    { name: t('shop.women_title'), url: "https://velasportita.lovable.app/shop/women" }
   ]);
 
   return (
@@ -19,7 +19,7 @@ const ShopWomen = () => {
         title={`${t('shop.women_title')} - Scarpe Eleganti Donna Made in Italy`}
         description={t('shop.women_subtitle')}
         keywords="scarpe donna, scarpe eleganti donna, stivaletti donna, mocassini donna, scarpe pelle donna, made in italy"
-        url="https://velasportitalia.lovable.app/shop/women"
+        url="https://velasportita.lovable.app/shop/women"
         structuredData={breadcrumbData}
       />
       <Header />

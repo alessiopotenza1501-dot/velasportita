@@ -8,8 +8,8 @@ const Blog = () => {
   const { t } = useTranslation();
   
   const breadcrumbData = getBreadcrumbSchema([
-    { name: "Home", url: "https://velasportitalia.lovable.app" },
-    { name: "Blog", url: "https://velasportitalia.lovable.app/blog" }
+    { name: "Home", url: "https://velasportita.lovable.app" },
+    { name: "Blog", url: "https://velasportita.lovable.app/blog" }
   ]);
 
   return (
@@ -18,7 +18,7 @@ const Blog = () => {
         title="Blog - Storie e Consigli sulle Scarpe Italiane | Vela Sport Italia"
         description={t('blog.subtitle')}
         keywords="blog scarpe, stile italiano, cura scarpe pelle, tendenze calzature"
-        url="https://velasportitalia.lovable.app/blog"
+        url="https://velasportita.lovable.app/blog"
         structuredData={breadcrumbData}
       />
       <Header />

@@ -2,7 +2,7 @@ export const getOrganizationSchema = () => ({
   "@context": "https://schema.org",
   "@type": "Organization",
   name: "Vela Sport Italia",
-  url: "https://velasportitalia.lovable.app",
+  url: "https://velasportita.lovable.app",
   logo: "https://storage.googleapis.com/gpt-engineer-file-uploads/QxExOJ4yh3e1JRofxzSZAhvHLGr2/uploads/1762775987723-logovela_upscayl_4x_upscayl_4x.jpg",
   description: "Eleganza italiana senza tempo. Scarpe classiche in pelle per uomo e donna.",
   address: {
@@ -31,7 +31,7 @@ export const getWebsiteSchema = () => ({
   "@context": "https://schema.org",
   "@type": "WebSite",
   name: "Vela Sport Italia",
-  url: "https://velasportitalia.lovable.app",
+  url: "https://velasportita.lovable.app",
   description: "Scarpe classiche italiane in pelle per uomo e donna",
   publisher: {
     "@type": "Organization",
@@ -39,7 +39,7 @@ export const getWebsiteSchema = () => ({
   },
   potentialAction: {
     "@type": "SearchAction",
-    target: "https://velasportitalia.lovable.app/search?q={search_term_string}",
+    target: "https://velasportita.lovable.app/search?q={search_term_string}",
     "query-input": "required name=search_term_string"
   }
 });
@@ -56,7 +56,7 @@ export const getProductSchema = (product: any) => ({
   },
   offers: {
     "@type": "Offer",
-    url: `https://velasportitalia.lovable.app/product/${product.node.handle}`,
+    url: `https://velasportita.lovable.app/product/${product.node.handle}`,
     priceCurrency: product.node.priceRange.minVariantPrice.currencyCode,
     price: product.node.priceRange.minVariantPrice.amount,
     availability: "https://schema.org/InStock",

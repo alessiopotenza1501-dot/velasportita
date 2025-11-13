@@ -9,8 +9,8 @@ const ShopMen = () => {
   const { t } = useTranslation();
   
   const breadcrumbData = getBreadcrumbSchema([
-    { name: "Home", url: "https://velasportitalia.lovable.app" },
-    { name: t('shop.men_title'), url: "https://velasportitalia.lovable.app/shop/men" }
+    { name: "Home", url: "https://velasportita.lovable.app" },
+    { name: t('shop.men_title'), url: "https://velasportita.lovable.app/shop/men" }
   ]);
 
   return (
@@ -19,7 +19,7 @@ const ShopMen = () => {
         title={`${t('shop.men_title')} - Scarpe Eleganti Uomo Made in Italy`}
         description={t('shop.men_subtitle')}
         keywords="scarpe uomo, scarpe eleganti uomo, oxford uomo, chelsea boots, mocassini uomo, scarpe pelle uomo, made in italy"
-        url="https://velasportitalia.lovable.app/shop/men"
+        url="https://velasportita.lovable.app/shop/men"
         structuredData={breadcrumbData}
       />
       <Header />

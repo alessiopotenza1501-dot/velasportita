@@ -24,7 +24,7 @@ const Index = () => {
       <SEO 
         title="Vela Sport Italia - Scarpe Classiche Italiane in Pelle"
         description="Eleganza italiana senza tempo. Scarpe classiche in pelle per uomo e donna. Scopri calzature italiane premium - scarpe eleganti, stivali, mocassini. Made in Italy."
-        url="https://velasportitalia.lovable.app"
+        url="https://velasportita.lovable.app"
         structuredData={structuredData}
       />
       <Header />
