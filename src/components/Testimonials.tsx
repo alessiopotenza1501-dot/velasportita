@@ -22,9 +22,14 @@ const Testimonials = () => {
   return <section className="py-20 bg-secondary">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-heading font-bold mb-4 text-foreground">Cosa dicono i nostri clienti</h2>
+          <h2 className="text-4xl md:text-5xl font-heading font-bold mb-4 text-foreground">
+            Cosa Dicono i Nostri Clienti
+          </h2>
+          <h3 className="text-2xl font-heading font-semibold mb-4 text-foreground">
+            <strong>Scarpe italiane</strong> apprezzate da professionisti
+          </h3>
           <p className="text-lg text-muted-foreground">
-            Trusted by discerning professionals worldwide
+            Qualità certificata dalle recensioni di chi sceglie <strong>calzature Made in Italy</strong>
           </p>
         </div>
 

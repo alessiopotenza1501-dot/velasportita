@@ -3,8 +3,15 @@ const ProductHighlights = () => {
   return <section className="py-20 bg-background">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-heading font-bold mb-4 text-foreground">Collezioni in primo piano</h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">Scarpe Classiche Italiane per ogni occasione</p>
+          <h2 className="text-4xl md:text-5xl font-heading font-bold mb-4 text-foreground">
+            <strong>Scarpe Italiane</strong> in Primo Piano
+          </h2>
+          <h3 className="text-2xl font-heading font-semibold mb-4 text-foreground">
+            Calzature Classiche Made in Italy
+          </h3>
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            <strong>Scarpe eleganti</strong> in <strong>pelle premium</strong> per uomo e donna. Stile italiano raffinato per ogni occasione.
+          </p>
         </div>
 
         <ProductGrid limit={8} />
