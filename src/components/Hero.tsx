@@ -1,13 +1,11 @@
 import { Button } from "@/components/ui/button";
 import heroImage from "@/assets/hero-formal-shoes.jpg";
-
 const Hero = () => {
-  return (
-    <section className="relative h-[700px] md:h-[800px] overflow-hidden">
+  return <section className="relative h-[700px] md:h-[800px] overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0 bg-cover bg-center" style={{
-        backgroundImage: `url(${heroImage})`
-      }}>
+      backgroundImage: `url(${heroImage})`
+    }}>
         <div className="absolute inset-0 bg-gradient-to-r from-accent/95 via-accent/75 to-accent/40" />
       </div>
 
@@ -15,11 +13,11 @@ const Hero = () => {
       <div className="relative container mx-auto px-4 h-full flex items-center">
         <div className="max-w-3xl text-accent-foreground animate-fade-in">
           <h1 className="text-5xl md:text-7xl font-heading font-bold mb-6 leading-tight">
-            <strong>Scarpe Italiane in Pelle</strong> - Eleganza Classica Made in Italy
+          <strong>Scarpe Italiane in Pelle</strong> - Eleganza Classica Made in Italy
           </h1>
           
           <p className="text-xl md:text-2xl mb-6 font-body">
-            <strong>Calzature artigianali premium</strong> per uomo e donna. Scopri l'eccellenza della <strong>tradizione calzaturiera italiana</strong>.
+          <strong>Calzature artigianali premium</strong> per uomo e donna. Scopri l'eccellenza della <strong>tradizione calzaturiera italiana</strong>.
           </p>
 
           {/* Bulleted Benefits */}
@@ -55,8 +53,6 @@ const Hero = () => {
           <div className="w-1.5 h-3 bg-primary-foreground rounded-full mt-2" />
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Hero;
