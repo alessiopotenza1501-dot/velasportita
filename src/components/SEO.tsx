@@ -11,9 +11,9 @@ interface SEOProps {
 }
 
 export const SEO = ({
-  title = "Scarpe Italiane in Pelle | Calzature Classiche Made in Italy | Vela Sport Italia",
-  description = "Scarpe eleganti artigianali in pelle italiana per uomo e donna. Oxford, mocassini, stivaletti classici Made in Italy dal 1978. Qualità premium, stile senza tempo. Scopri la collezione.",
-  keywords = "scarpe italiane, calzature made in italy, scarpe pelle uomo, scarpe pelle donna, scarpe eleganti artigianali, oxford italiane, mocassini pelle, stivaletti classici, calzature artigianali, scarpe formali italia, scarpe classiche pelle naturale, manifattura italiana calzature",
+  title = "Vela Sport Italia - Scarpe Classiche Italiane in Pelle",
+  description = "Eleganza italiana senza tempo. Scarpe classiche in pelle per uomo e donna. Scopri calzature italiane premium - scarpe eleganti, stivali, mocassini. Made in Italy.",
+  keywords = "scarpe italiane, calzature classiche, scarpe pelle uomo, scarpe pelle donna, scarpe eleganti, stivali italiani, mocassini, made in italy, scarpe formali, calzature artigianali",
   image = "https://storage.googleapis.com/gpt-engineer-file-uploads/QxExOJ4yh3e1JRofxzSZAhvHLGr2/uploads/1762775987723-logovela_upscayl_4x_upscayl_4x.jpg",
   url = "https://velasportita.lovable.app",
   type = "website",
