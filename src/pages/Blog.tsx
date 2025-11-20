@@ -1,8 +1,13 @@
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { SEO } from "@/components/SEO";
 import { getBreadcrumbSchema } from "@/utils/structuredData";
+import { blogPosts } from "@/data/blogPosts";
+import { Calendar, User, ArrowRight } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 
 const Blog = () => {
   const { t } = useTranslation();
@@ -34,13 +39,50 @@ const Blog = () => {
               </p>
             </div>
 
-            <div className="max-w-2xl mx-auto text-center py-16 bg-secondary rounded-lg">
-              <h2 className="text-3xl font-heading font-bold mb-4">
-                {t('blog.coming_soon')}
-              </h2>
-              <p className="text-lg text-muted-foreground">
-                {t('blog.coming_soon_desc')}
-              </p>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {blogPosts.map((post) => (
+                <Card key={post.slug} className="flex flex-col overflow-hidden hover:shadow-lg transition-shadow">
+                  <div className="aspect-video overflow-hidden">
+                    <img 
+                      src={post.image} 
+                      alt={post.title}
+                      className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                    />
+                  </div>
+                  <CardHeader>
+                    <div className="flex gap-4 text-sm text-muted-foreground mb-2">
+                      <div className="flex items-center gap-1">
+                        <Calendar className="h-3 w-3" />
+                        <time dateTime={post.publishedAt}>
+                          {new Date(post.publishedAt).toLocaleDateString('it-IT', {
+                            year: 'numeric',
+                            month: 'short',
+                            day: 'numeric'
+                          })}
+                        </time>
+                      </div>
+                      <div className="flex items-center gap-1">
+                        <User className="h-3 w-3" />
+                        <span>{post.author}</span>
+                      </div>
+                    </div>
+                    <CardTitle className="text-xl font-heading line-clamp-2">
+                      {post.title}
+                    </CardTitle>
+                    <CardDescription className="line-clamp-3">
+                      {post.excerpt}
+                    </CardDescription>
+                  </CardHeader>
+                  <CardFooter className="mt-auto">
+                    <Link to={`/blog/${post.slug}`} className="w-full">
+                      <Button variant="outline" className="w-full group">
+                        {t('blog.read_more')}
+                        <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+                      </Button>
+                    </Link>
+                  </CardFooter>
+                </Card>
+              ))}
             </div>
           </div>
         </section>

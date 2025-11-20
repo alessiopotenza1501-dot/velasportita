@@ -119,8 +119,8 @@
   "blog": {
     "title": "Our Blog",
     "subtitle": "Stories, trends and tips from the world of Italian footwear",
-    "coming_soon": "Coming Soon",
-    "coming_soon_desc": "We're preparing interesting content about style, shoe care and Italian tradition. Come back soon!"
+    "read_more": "Read More",
+    "back_to_blog": "Back to Blog"
   },
   "brand_story": {
     "heading": "Refined Made in Italy",

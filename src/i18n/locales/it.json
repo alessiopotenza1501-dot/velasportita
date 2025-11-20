@@ -119,8 +119,8 @@
   "blog": {
     "title": "Il Nostro Blog",
     "subtitle": "Storie, tendenze e consigli dal mondo delle calzature italiane",
-    "coming_soon": "Prossimamente",
-    "coming_soon_desc": "Stiamo preparando contenuti interessanti su stile, cura delle calzature e tradizione italiana. Torna presto!"
+    "read_more": "Leggi di più",
+    "back_to_blog": "Torna al Blog"
   },
   "brand_story": {
     "heading": "Made in Italy raffinato",
