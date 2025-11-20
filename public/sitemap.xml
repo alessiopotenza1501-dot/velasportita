@@ -26,9 +26,27 @@
   </url>
   <url>
     <loc>https://velasportita.lovable.app/blog</loc>
-    <lastmod>2025-01-12</lastmod>
+    <lastmod>2025-01-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://velasportita.lovable.app/blog/tradizione-scarpe-artigianali-italiane</loc>
+    <lastmod>2025-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://velasportita.lovable.app/blog/scarpe-pelle-made-in-italy</loc>
+    <lastmod>2025-01-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://velasportita.lovable.app/blog/sneaker-made-in-italy-europa</loc>
+    <lastmod>2025-01-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://velasportita.lovable.app/contact</loc>
